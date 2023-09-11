@@ -20,10 +20,7 @@ def parser():
     for task in tasks:
         task_name = task.get_text()
         href = task.get('href')
-        work.append({
-            'Задача': task_name,
-            'Ссылка': 'https://www.fl.ru'+href
-        })
+        work.append({'Задача': task_name, 'Ссылка': f'https://www.fl.ru{href}'})
     return work
 
 
